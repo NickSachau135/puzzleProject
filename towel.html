@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nick Sachau">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:title" content="">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script>
+        setTimeout(() => {
+            const status = document.getElementById('status')
+
+            status.innerText = "Done!"
+        }, 4000)
+
+        setTimeout(() => {
+            const status = document.getElementById('status')
+            const title = document.getElementById('title')
+            const difficulty = document.getElementById('difficulty')
+            const question = document.getElementById('question')
+            const hint = document.getElementById('hint')
+
+            status.innerText = ""
+            title.innerText = "Riddle 1:"
+            difficulty.innerText = "Difficulty: Baby"
+            question.innerText = "What gets wet while drying?"
+            hint.innerText = "Once you have solved it try to go to replace riddle for your answer"
+        }, 5000)
+    </script>
+</head>
+<body>
+
+    <h1>Welcome</h1>
+    <h3>I am going throught your files to look for a riddle :)</h3>
+    <img src="https://cms.qz.com/wp-content/uploads/2017/05/wanna-cry-hack-e1494859304907.jpg?quality=75&strip=all&w=1200&h=630&crop=1" width="500px">
+
+    <h2 id="status"></h2>
+
+    <h2 id="title"></h2>
+    <h4 id="difficulty"></h4>
+    <p id="question"></p>
+    <p id="hint"></p>
+
+</body>
+</html>
